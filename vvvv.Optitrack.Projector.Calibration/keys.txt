@@ -1,0 +1,18 @@
+
+
+
+
+Enter 	Add new point
+Backspace 	Delete point
+Tab 	Select next point
+Shift+Tab 	Select last point 
+
+shift for zoom 
+
+Space 	Reset point to world view camera
+Tab 	Select next point
+Shift+Tab 	Select last point 
+
+
+
+http://vvvv.org/contribution/vvvv.tutorials.mapping.3d
