@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\SimpleKinect\modules\SaveViewProjection (Transform).v4p" systemname="SaveViewProjection (Transform)" filename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Mapping2-3D\Modules\SaveViewProjection (Transform).v4p" scrollx="0" scrolly="720">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45alpha29.3.dtd" >
+   <PATCH nodename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\modules\SaveViewProjection (Transform).v4p" systemname="SaveViewProjection (Transform)" filename="C:\kimchiandchips\Workshops\VVVV.Tutorials.Mapping2-3D\Modules\SaveViewProjection (Transform).v4p">
    <BOUNDS type="Window" left="6210" top="2340" width="8205" height="7545">
    </BOUNDS>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
@@ -151,8 +151,6 @@
    </PIN>
    <PIN pinname="Encoding" slicecount="1" values="|System Default|">
    </PIN>
-   <PIN pinname="Success" visible="1">
-   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="11" dstpinname="Filename">
    </LINK>
@@ -210,24 +208,4 @@
    <LINKPOINT x="795" y="5398">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="390" top="6510" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="390" top="6510" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Success">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="11" srcpinname="Success" dstnodeid="17" dstpinname="Y Input Value">
-   </LINK>
-   <PACK Name="addonpack" Version="33.7.0">
-   </PACK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\Subpatches\Mesh.SelectPoints (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Mesh.SelectPoints (DX11).v4p" systemname="Mesh.SelectPoints (DX11)" locked="0" scrollx="0" scrolly="6510">
+   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\Subpatches\Mesh.SelectPoints (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Mesh.SelectPoints (DX11).v4p" systemname="Mesh.SelectPoints (DX11)" locked="0" scrollx="0" scrolly="-360">
    <BOUNDS height="14685" left="8055" top="3690" type="Window" width="13905">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="..\Modules\Intersect (3d Vector DX11.Geometry Alt).v4p" id="0" nodename="Intersect (3d Vector DX11.Geometry Alt)" systemname="Intersect (3d Vector DX11.Geometry Alt)">
@@ -820,7 +820,7 @@
    </NODE>
    <LINK srcnodeid="150" srcpinname="Output String" dstnodeid="90" dstpinname="ModelTexture">
    </LINK>
-   <NODE componentmode="Hidden" filename="RendererWorld (DX11).v4p" id="89" nodename="RendererWorld (DX11)" systemname="RendererWorld (DX11)" stayontop="0">
+   <NODE componentmode="InAWindow" filename="RendererWorld (DX11).v4p" id="89" nodename="RendererWorld (DX11)" systemname="RendererWorld (DX11)" stayontop="0">
    <BOUNDS height="270" left="405" top="16140" type="Node" width="8220">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
@@ -1030,4 +1030,6 @@
    </LINK>
    <LINK srcnodeid="90" srcpinname="Layer Out" dstnodeid="147" dstpinname="Layer 1">
    </LINK>
+   <PACK Name="vvvv.packs_" Version="0.2.0">
+   </PACK>
    </PATCH>

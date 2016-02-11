@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="..\..\..\..\Users\JoanSol\Documents\GitHub\InnerGarden\data\KinectUV.txt">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="KinectView.txt">
    </PIN>
    </NODE>
    <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="5">
@@ -133,7 +133,7 @@
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="8" values="0,0,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="8" values="0.211133492034426,0.143624488799365,0.721113349203443,0.111762192516633,0.725080876518342,-0.569126533601904,0.19520234389306,-0.558505768174327">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="UVs">
    </PIN>
