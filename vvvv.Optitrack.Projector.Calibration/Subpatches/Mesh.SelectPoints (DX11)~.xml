@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\Subpatches\Mesh.SelectPoints (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Mesh.SelectPoints (DX11).v4p" systemname="Mesh.SelectPoints (DX11)" locked="0" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\Subpatches\Mesh.SelectPoints (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Mesh.SelectPoints (DX11).v4p" systemname="Mesh.SelectPoints (DX11)" locked="0" scrollx="0" scrolly="6120">
    <BOUNDS height="14685" left="8055" top="3690" type="Window" width="13905">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="..\Modules\Intersect (3d Vector DX11.Geometry Alt).v4p" id="0" nodename="Intersect (3d Vector DX11.Geometry Alt)" systemname="Intersect (3d Vector DX11.Geometry Alt)">
@@ -711,7 +711,7 @@
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="4">
+   <PIN pinname="Input Count" slicecount="1" values="5">
    </PIN>
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
@@ -722,6 +722,8 @@
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="148" systemname="IOBox (Enumerations)">
@@ -1032,4 +1034,16 @@
    </LINK>
    <PACK Name="vvvv.packs_" Version="0.2.0">
    </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="152" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1995" top="14805" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1995" top="14805" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 5|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="152" srcpinname="Output Node" dstnodeid="147" dstpinname="Layer 5">
+   </LINK>
    </PATCH>
