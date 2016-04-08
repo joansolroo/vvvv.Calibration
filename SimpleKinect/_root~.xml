@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\SimpleKinect\_root.v4p" systemname="_root" filename="C:\vvvv\projects\KinectStream\_root.v4p" scrollx="0" scrolly="1440">
-   <BOUNDS type="Window" left="12135" top="570" width="25770" height="17280">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\SimpleKinect\_root.v4p" systemname="_root" filename="C:\vvvv\projects\KinectStream\_root.v4p" scrollx="768" scrolly="10080">
+   <BOUNDS type="Window" left="2508" top="5760" width="25764" height="13104">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
@@ -10,7 +10,7 @@
    <PIN pinname="ControlPoints" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="PickPointsInTexture" filename="PickPointsInTexture.v4p" nodename="PickPointsInTexture.v4p" componentmode="Hidden" id="2">
+   <NODE systemname="PickPointsInTexture" filename="PickPointsInTexture.v4p" nodename="PickPointsInTexture.v4p" componentmode="InAWindow" id="2">
    <BOUNDS type="Node" left="2205" top="2355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
@@ -59,7 +59,7 @@
    <NODE systemname="Vector (3d Join)" nodename="Vector (3d Join)" componentmode="Hidden" id="6">
    <BOUNDS type="Node" left="885" top="5115" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="X" visible="1">
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Y" visible="1">
    </PIN>
@@ -68,8 +68,6 @@
    <PIN pinname="XYZ" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Red" dstnodeid="6" dstpinname="X">
-   </LINK>
    <LINK srcnodeid="5" srcpinname="Green" dstnodeid="6" dstpinname="Y">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Blue" dstnodeid="6" dstpinname="Z">
@@ -101,7 +99,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8460" top="13770" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="3420" top="1596" width="10704" height="10656">
+   <BOUNDS type="Window" left="1560" top="5016" width="10704" height="10656">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -115,7 +113,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Scale XYZ" slicecount="3" values="0.15,0.15,0.15">
+   <PIN pinname="Scale XYZ" slicecount="3" values="1,1,1">
    </PIN>
    <PIN pinname="Translate XYZ" visible="1" slicecount="9" values="0.437644782941788,0.426188068231568,0.386809014715254,0.433977362932637,-0.0871577388606966,-0.114192071603611,-0.288530901074409,0.232073888415471,-0.0127336517907679">
    </PIN>
@@ -152,6 +150,8 @@
    <PIN pinname="Initial Yaw" slicecount="1" values="-0.1">
    </PIN>
    <PIN pinname="Initial Pitch" slicecount="1" values="0.13">
+   </PIN>
+   <PIN pinname="Far Plane" slicecount="1" values="1000">
    </PIN>
    </NODE>
    <LINK srcnodeid="38" srcpinname="View" dstnodeid="42" dstpinname="View">
@@ -239,7 +239,7 @@
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="Scale XYZ" slicecount="3" values="0.15,0.15,0.15">
+   <PIN pinname="Scale XYZ" slicecount="3" values="1,1,1">
    </PIN>
    <PIN pinname="Translate XYZ" visible="1" slicecount="9" values="-0.108207635581493,-0.0901764109730721,2.21877837181091,0.446119338274002,-0.269428312778473,1.80029344558716,0.449202924966812,-0.675815343856812,2.48517370223999">
    </PIN>
@@ -825,11 +825,11 @@
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="|..\..\..\..\Users\Joan Sol\Documents\Unity\InnerGarden\data\KinectUV.txt|" visible="1">
+   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\..\..\Users\Joan Sol\Documents\Unity\InnerGarden\data\KinectUV.txt|">
    </PIN>
    <PIN pinname="Write" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Window" left="11244" top="1740" width="9216" height="7848">
+   <BOUNDS type="Window" left="8028" top="336" width="9216" height="7848">
    </BOUNDS>
    <PIN pinname="UVs" visible="1">
    </PIN>
@@ -1019,6 +1019,8 @@
    </PIN>
    <PIN pinname="Write" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="11064" top="2904" width="8196" height="7536">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="71" dstpinname="View">
    </LINK>
@@ -1155,7 +1157,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="15870" top="540" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="12" visible="1" values="0,0,0,0,0,15,-15,0,0,15,0,0">
+   <PIN pinname="Y Input Value" slicecount="12" visible="1" values="0,0,0,0,0,30,30,0,0,15,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1450,8 +1452,6 @@
    </NODE>
    <LINK srcnodeid="74" srcpinname="Y Output Value" dstnodeid="112" dstpinname="VerticesXYZ">
    </LINK>
-   <LINK srcnodeid="112" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 3">
-   </LINK>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="113" dstpinname="VerticesXYZ">
    </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="116">
@@ -1539,5 +1539,69 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="120" srcpinname="Output String" dstnodeid="63" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="121">
+   <BOUNDS type="Node" left="6972" top="1392" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6972" top="1392" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-9072" top="5820" width="5016" height="4164">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="122">
+   <BOUNDS type="Node" left="372" top="4932" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Red" dstnodeid="122" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="122" srcpinname="Output" dstnodeid="6" dstpinname="X">
+   </LINK>
+   <NODE systemname="Constant (EX9.Effect)" filename="%VVVV%\lib\nodes\effects\Constant.fx" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="123">
+   <BOUNDS type="Node" left="12396" top="14856" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="125">
+   <BOUNDS type="Node" left="13152" top="13800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Translate XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Scale XYZ" slicecount="3" values="10,10,10">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Transform Out" dstnodeid="123" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="ApplyTransform (Transform Vector)" nodename="ApplyTransform (Transform Vector)" componentmode="Hidden" id="126">
+   <BOUNDS type="Node" left="13128" top="14172" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
+   <PIN pinname="XYZ Transformed" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Transform Out" dstnodeid="126" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="Box (EX9.Geometry)" filename="" nodename="Box (EX9.Geometry)" componentmode="Hidden" id="124">
+   <BOUNDS type="Node" left="12444" top="14136" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="124" srcpinname="Mesh" dstnodeid="123" dstpinname="Mesh">
+   </LINK>
+   <LINK srcnodeid="126" srcpinname="XYZ Transformed" dstnodeid="125" dstpinname="Translate XYZ">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Layer" dstnodeid="37" dstpinname="Layer 3">
    </LINK>
    </PATCH>

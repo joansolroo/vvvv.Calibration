@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" filename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" locked="0" systemname="_CalibrateProjector (DX11) help manual" scrollx="0" scrolly="1440">
-   <BOUNDS height="13095" left="10800" top="1965" type="Window" width="18705">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" filename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" locked="0" systemname="_CalibrateProjector (DX11) help manual" scrollx="0" scrolly="15564">
+   <BOUNDS height="13092" left="6576" top="1740" type="Window" width="18696">
    </BOUNDS>
    <LINK dstnodeid="34" dstpinname="Y Input Value" srcnodeid="22" srcpinname="Mouse XYZ">
    </LINK>
@@ -1423,29 +1423,9 @@
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="186" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13455" top="2430" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13455" top="2430" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Switch">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="186" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Input 2">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="187">
    <BOUNDS type="Node" left="3705" top="12000" width="100" height="100">
    </BOUNDS>
@@ -1505,11 +1485,11 @@
    <LINK srcnodeid="128" srcpinname="Output String" dstnodeid="192" dstpinname="Filename">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="193" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1230" top="855" width="2925" height="1200">
+   <BOUNDS type="Box" left="1230" top="855" width="2928" height="1200">
    </BOUNDS>
    <BOUNDS type="Node" left="1230" top="855" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="18" visible="1" values="0,0,15,-15,0,15,-15,0,0,15,0,0,15,10.8,0,0,10.8,0">
+   <PIN pinname="Y Input Value" slicecount="18" visible="1" values="0,0,30,15,0,0,15,11.7,0,0,11.7,30,15,11.7,0,0,11.7,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1559,5 +1539,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="195" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Fullscreen">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="196" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13164" top="2496" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13164" top="2496" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="185" dstpinname="Input 2">
    </LINK>
    </PATCH>
