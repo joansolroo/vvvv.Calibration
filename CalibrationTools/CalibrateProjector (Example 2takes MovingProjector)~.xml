@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes MovingProjector).v4p" scrollx="7680" scrolly="2628" systemname="CalibrateProjector (Example 2takes MovingProjector)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes MovingProjector).v4p">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes MovingProjector).v4p" scrollx="5976" scrolly="1584" systemname="CalibrateProjector (Example 2takes MovingProjector)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes MovingProjector).v4p">
    <BOUNDS type="Window" left="0" top="996" width="17436" height="9540">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
@@ -28,8 +28,8 @@
    <PIN pinname="Status" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="43">
-   <BOUNDS type="Node" left="924" top="3108" width="100" height="100">
+   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="InAWindow" id="43">
+   <BOUNDS type="Node" left="948" top="3168" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -149,9 +149,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="23" srcpinname="Output Node" dstnodeid="43" dstpinname="Projection" linkstyle="VHV">
-   <LINKPOINT x="6668" y="2860">
+   <LINKPOINT x="6676" y="2880">
    </LINKPOINT>
-   <LINKPOINT x="4684" y="2840">
+   <LINKPOINT x="4700" y="2880">
    </LINKPOINT>
    </LINK>
    <NODE systemname="AxisAndGrid (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\AxisAndGrid\AxisAndGrid (DX11).v4p" nodename="AxisAndGrid (DX11)" componentmode="Hidden" id="22" hiddenwhenlocked="1">
@@ -281,9 +281,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Floor size" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="948" y="2832">
+   <LINKPOINT x="956" y="2852">
    </LINKPOINT>
-   <LINKPOINT x="948" y="2832">
+   <LINKPOINT x="964" y="2872">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="13" hiddenwhenlocked="1">
@@ -385,9 +385,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="43" dstpinname="UV" linkstyle="Bezier" hiddenwhenlocked="1">
-   <LINKPOINT x="1872" y="2346">
+   <LINKPOINT x="1880" y="2366">
    </LINKPOINT>
-   <LINKPOINT x="1872" y="2346">
+   <LINKPOINT x="1888" y="2386">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
@@ -403,9 +403,9 @@
    <LINK srcnodeid="2" srcpinname="Reprojection Error" dstnodeid="48" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output Node" dstnodeid="43" dstpinname="View" linkstyle="VHV">
-   <LINKPOINT x="5780" y="2790">
+   <LINKPOINT x="5788" y="2810">
    </LINKPOINT>
-   <LINKPOINT x="4084" y="2814">
+   <LINKPOINT x="4100" y="2854">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="42" srcpinname="Projection" dstnodeid="23" dstpinname="Input Node">
@@ -862,7 +862,7 @@
    <LINKPOINT x="3096" y="2040">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="87">
+   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="InAWindow" id="87">
    <BOUNDS type="Node" left="3828" top="3156" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
@@ -1133,11 +1133,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="139" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="19932" top="4968" width="792" height="720">
+   <BOUNDS type="Box" left="19908" top="5244" width="792" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="19932" top="4968" width="0" height="0">
+   <BOUNDS type="Node" left="19908" top="5244" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.1,0.96,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.79,0.05">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1149,13 +1149,15 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Translate XYZ|">
+   </PIN>
    </NODE>
    <LINK srcnodeid="139" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Translate XYZ">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="135" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="20808" top="5016" width="792" height="720">
+   <BOUNDS type="Box" left="21024" top="5184" width="792" height="720">
    </BOUNDS>
-   <BOUNDS type="Node" left="20808" top="5016" width="0" height="0">
+   <BOUNDS type="Node" left="21024" top="5184" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0.04,0">
    </PIN>
@@ -1167,11 +1169,13 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Rotate XYZ|">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="135" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Rotate XYZ" linkstyle="VHV">
-   <LINKPOINT x="20800" y="5260">
+   <LINK srcnodeid="135" srcpinname="Y Output Value" dstnodeid="140" dstpinname="Rotate XYZ" linkstyle="Bezier">
+   <LINKPOINT x="21012" y="6276">
    </LINKPOINT>
-   <LINKPOINT x="20456" y="5228">
+   <LINKPOINT x="20412" y="6276">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="141" systemname="IOBox (Node)">
@@ -1265,8 +1269,6 @@
    <LINK srcnodeid="146" srcpinname="Y Output Value" dstnodeid="144" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="143" srcpinname="Y Output Value" dstnodeid="144" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="139" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="Constant (DX11.Effect)" filename="%VVVV%\packs\dx11\nodes\dx11\Constant.fx" nodename="Constant (DX11.Effect)" componentmode="Hidden" id="150" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="20280" top="9804" width="100" height="100">
@@ -1414,4 +1416,10 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="139" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="17544" y="4824">
+   </LINKPOINT>
+   <LINKPOINT x="19908" y="4824">
+   </LINKPOINT>
+   </LINK>
    </PATCH>

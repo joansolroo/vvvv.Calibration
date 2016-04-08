@@ -432,18 +432,14 @@
    </NODE>
    <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="36" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="37">
-   <BOUNDS type="Node" left="912" top="5688" width="100" height="100">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="38" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1596" top="4824" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="912" top="5688" width="4800" height="3600">
+   <BOUNDS type="Node" left="1596" top="4824" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Window" left="4116" top="2040" width="5016" height="4164">
-   </BOUNDS>
-   <PIN pinname="Texture In" visible="1">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Scene Debug|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Buffers" dstnodeid="37" dstpinname="Texture In">
-   <LINKPOINT x="1050" y="5568">
-   </LINKPOINT>
+   <LINK srcnodeid="1" srcpinname="Buffers" dstnodeid="38" dstpinname="Input Node">
    </LINK>
    </PATCH>

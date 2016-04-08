@@ -1,23 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" scrollx="0" scrolly="2160" systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" scrollx="0" scrolly="-360" systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p">
    <BOUNDS type="Window" left="876" top="396" width="9912" height="11736">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="132" top="396" width="5100" height="456">
-   </BOUNDS>
-   <BOUNDS type="Box" left="132" top="396" width="5100" height="456">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="0" values="|PickWorldPosition (DX11 pipet)|">
-   </PIN>
-   <PIN pinname="Output String" slicecount="1" visible="0" values="||">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" visible="1" values="14">
-   </PIN>
-   </NODE>
    <NODE systemname="Transform (Transform 3d Vector)" nodename="Transform (Transform 3d Vector)" componentmode="Hidden" id="38">
    <BOUNDS type="Node" left="3816" top="2424" width="100" height="100">
    </BOUNDS>
