@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes).v4p" scrollx="0" scrolly="-360" systemname="CalibrateProjector (Example 2takes)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes).v4p">
-   <BOUNDS type="Window" left="-672" top="720" width="17436" height="9528">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes).v4p" scrollx="5712" scrolly="4380" systemname="CalibrateProjector (Example 2takes)" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\CalibrateProjector (Example 2takes).v4p">
+   <BOUNDS type="Window" left="2832" top="684" width="17436" height="9528">
    </BOUNDS>
    <PACK Name="image" Version="0.2.0">
    </PACK>
@@ -28,7 +28,7 @@
    <PIN pinname="Status" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="43">
+   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="924" top="3108" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
@@ -59,7 +59,7 @@
    </PIN>
    <PIN pinname="TranslateXYZ" visible="1" slicecount="3" values="0.19,0.5,0">
    </PIN>
-   <PIN pinname="RotateXYZ" visible="1" slicecount="3" values="0.36,0.81,1.56">
+   <PIN pinname="RotateXYZ" visible="1" slicecount="3" values="0.15,0.79885396839818,0">
    </PIN>
    <PIN pinname="ShiftXY" slicecount="2" values="0,0">
    </PIN>
@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9060" top="612" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.15,0.81,0">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.15,0.82,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -211,18 +211,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="21" srcpinname="Output" dstnodeid="19" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="42" dstpinname="RotateXYZ" linkstyle="VHV">
-   <LINKPOINT x="10176" y="2012">
-   </LINKPOINT>
-   <LINKPOINT x="8916" y="2116">
-   </LINKPOINT>
-   <LINKPOINT x="9180" y="1428">
-   </LINKPOINT>
-   <LINKPOINT x="7356" y="1532">
-   </LINKPOINT>
-   <LINKPOINT x="7668" y="1684">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Grid (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Grid (DX11.Geometry)" componentmode="Hidden" id="18" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="1608" top="12216" width="100" height="100">
@@ -470,7 +458,7 @@
    </LINK>
    <LINK srcnodeid="53" srcpinname="Layer Out" dstnodeid="36" dstpinname="Layer 1">
    </LINK>
-   <NODE systemname="Projector (DX11 Layer)" filename="Modules\Projector (DX11 Layer).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Projector (DX11 Layer).v4p" componentmode="Hidden" id="59">
+   <NODE systemname="Projector (DX11 Layer)" filename="modules\Projector (DX11 Layer).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Projector (DX11 Layer).v4p" componentmode="Hidden" id="59">
    <BOUNDS type="Node" left="7598" top="10205" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="4920" top="6527" width="5356" height="7356">
@@ -512,7 +500,7 @@
    </NODE>
    <LINK srcnodeid="43" srcpinname="Position XYZ" dstnodeid="61" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Quad (DX11 Layer Advanced)" filename="Modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="65" stayontop="0">
+   <NODE systemname="Quad (DX11 Layer Advanced)" filename="modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="65" stayontop="0">
    <BOUNDS type="Node" left="6780" top="10182" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3388" top="5802" width="6784" height="8760">
@@ -526,7 +514,7 @@
    <PIN pinname="Corners XYZ" visible="1" slicecount="12" values="0.493909120559692,-2.50572895765799E-009,-0.0420391485095024,-0.108126252889633,4.31825242230843E-009,0.0724482387304306,-1.20763373374939,-8.8392162922446E-008,-1.48297417163849,0.945730268955231,-1.12800414342473E-007,-1.8924765586853">
    </PIN>
    </NODE>
-   <NODE systemname="Projector (DX11 Layer)" filename="Modules\Projector (DX11 Layer).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Projector (DX11 Layer).v4p" componentmode="Hidden" id="67">
+   <NODE systemname="Projector (DX11 Layer)" filename="modules\Projector (DX11 Layer).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Projector (DX11 Layer).v4p" componentmode="Hidden" id="67">
    <BOUNDS type="Node" left="12458" top="9971" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="9780" top="6293" width="5356" height="7356">
@@ -537,14 +525,14 @@
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="View" visible="1">
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Projector color" slicecount="1" visible="1" values="|0.34198,0.34198,0.34198,1.00000|">
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="BackCullSimple">
    </PIN>
    </NODE>
-   <NODE systemname="Quad (DX11 Layer Advanced)" filename="Modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="66">
+   <NODE systemname="Quad (DX11 Layer Advanced)" filename="modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="11532" top="9960" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="8140" top="5580" width="6784" height="8760">
@@ -579,7 +567,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="69">
-   <BOUNDS type="Node" left="11520" top="10656" width="100" height="100">
+   <BOUNDS type="Node" left="11640" top="10656" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -589,29 +577,27 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Layer" dstnodeid="69" dstpinname="Layer 1" linkstyle="VHV">
-   <LINKPOINT x="11544" y="10434">
+   <LINKPOINT x="11584" y="10434">
    </LINKPOINT>
-   <LINKPOINT x="11484" y="10434">
+   <LINKPOINT x="11564" y="10434">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="67" srcpinname="Layer Out" dstnodeid="69" dstpinname="Layer 2" linkstyle="VHV">
-   <LINKPOINT x="12456" y="10440">
+   <LINKPOINT x="12496" y="10440">
    </LINKPOINT>
-   <LINKPOINT x="11952" y="10440">
+   <LINKPOINT x="12032" y="10440">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="69" srcpinname="Layer Out" dstnodeid="52" dstpinname="Layer 2" linkstyle="VHV">
-   <LINKPOINT x="11520" y="11298">
+   <LINKPOINT x="11600" y="11298">
    </LINKPOINT>
-   <LINKPOINT x="9828" y="11298">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="View Transform" dstnodeid="67" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="11900" y="8966">
-   </LINKPOINT>
-   <LINKPOINT x="12460" y="9142">
+   <LINKPOINT x="9868" y="11298">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="Projection Transform" dstnodeid="67" dstpinname="Projection" linkstyle="Bezier">
@@ -639,10 +625,12 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Solve">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Solve">
    </LINK>
-   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="71">
+   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="71">
    <BOUNDS type="Node" left="9420" top="9192" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
@@ -670,12 +658,6 @@
    <LINKPOINT x="1916" y="4898">
    </LINKPOINT>
    <LINKPOINT x="10348" y="5866">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="View Transform" dstnodeid="71" dstpinname="View" linkstyle="Bezier">
-   <LINKPOINT x="11852" y="8576">
-   </LINKPOINT>
-   <LINKPOINT x="11344" y="8752">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="2" srcpinname="Projection Transform" dstnodeid="71" dstpinname="Projection" linkstyle="Bezier">
@@ -753,7 +735,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10224" top="348" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -765,7 +747,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Pause">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -773,7 +755,7 @@
    <LINK srcnodeid="77" srcpinname="Y Output Value" dstnodeid="21" dstpinname="Pause">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="78" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="15300" top="9156" width="1812" height="852">
+   <BOUNDS type="Box" left="15300" top="9156" width="1260" height="396">
    </BOUNDS>
    <BOUNDS type="Node" left="15300" top="9156" width="0" height="0">
    </BOUNDS>
@@ -880,7 +862,7 @@
    <LINKPOINT x="3096" y="2040">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="Modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="87">
+   <NODE systemname="ProjectorIntersectionWithFloor (DX11 Pipet)" filename="modules\ProjectorIntersectionWithFloor (DX11 Pipet).v4p" nodename="ProjectorIntersectionWithFloor (DX11 Pipet)" componentmode="Hidden" id="87">
    <BOUNDS type="Node" left="3828" top="3156" width="100" height="100">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
@@ -948,7 +930,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Intersection XYZ|">
    </PIN>
    </NODE>
-   <NODE systemname="Quad (DX11 Layer Advanced)" filename="Modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="88" stayontop="0">
+   <NODE systemname="Quad (DX11 Layer Advanced)" filename="modules\Quad (DX11 Layer Advanced).v4p" nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\Quad (DX11 Layer Advanced).v4p" componentmode="Hidden" id="88" stayontop="0">
    <BOUNDS type="Node" left="5976" top="10182" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="2584" top="5802" width="6784" height="8760">
@@ -1054,7 +1036,7 @@
    <LINKPOINT x="11568" y="9714">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="AddNoise (Spreads)" filename="Modules\AddNoise (Spreads).v4p" nodename="Modules\AddNoise (Spreads).v4p" componentmode="InAWindow" id="125">
+   <NODE systemname="AddNoise (Spreads)" filename="modules\AddNoise (Spreads).v4p" nodename="Modules\AddNoise (Spreads).v4p" componentmode="InAWindow" id="125">
    <BOUNDS type="Node" left="10282" top="6939" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="7642" top="4527" width="5280" height="4824">
@@ -1083,7 +1065,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11256" top="6492" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1121,7 +1103,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10572" top="5076" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1131,7 +1113,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|move noise|">
    </PIN>
@@ -1139,5 +1121,59 @@
    <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="128" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="125" srcpinname="Output" dstnodeid="2" dstpinname="World XYZ">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="141" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="11892" top="8448" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11892" top="8448" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|View Transform|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Output Node" dstnodeid="71" dstpinname="View">
+   <LINKPOINT x="11910" y="8718">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="141" srcpinname="Output Node" dstnodeid="67" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output" dstnodeid="42" dstpinname="RotateXYZ" linkstyle="VHV">
+   <LINKPOINT x="10176" y="2012">
+   </LINKPOINT>
+   <LINKPOINT x="8916" y="2116">
+   </LINKPOINT>
+   <LINKPOINT x="9180" y="1428">
+   </LINKPOINT>
+   <LINKPOINT x="7356" y="1532">
+   </LINKPOINT>
+   <LINKPOINT x="7668" y="1684">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="143" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7680" top="744" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7680" top="744" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.1,0.64,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TranslateXYZ">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="143" srcpinname="Y Output Value" dstnodeid="42" dstpinname="TranslateXYZ">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="View Transform" dstnodeid="141" dstpinname="Input Node">
    </LINK>
    </PATCH>
