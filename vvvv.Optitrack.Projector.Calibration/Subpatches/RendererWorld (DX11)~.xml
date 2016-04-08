@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\Subpatches\RendererWorld (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Renderer World (DX11).v4p" systemname="Renderer World (DX11)" scrollx="432" scrolly="-360">
+   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\Subpatches\RendererWorld (DX11).v4p" filename="C:\Users\colors1\Desktop\Dx11SandBox\Ported_DX11\ProjectorNode_b29 (DX11)\Subpatches\Renderer World (DX11).v4p" systemname="Renderer World (DX11)" scrollx="435" scrolly="-1080">
    <BOUNDS height="12840" left="5565" top="660" type="Window" width="11475">
    </BOUNDS>
    <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" id="6" nodename="Camera (Transform Softimage)" systemname="Camera (Transform Softimage)">
@@ -506,32 +506,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer 2|">
    </PIN>
    </NODE>
-   <NODE systemname="Renderer (DX11)" filename="%VVVV%\directx11\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="59">
-   <BOUNDS type="Node" left="1650" top="7815" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1650" top="7815" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="420" top="1728" width="9384" height="5712">
-   </BOUNDS>
-   <PIN pinname="Layers" visible="1">
-   </PIN>
-   <PIN pinname="Mouse State" visible="1">
-   </PIN>
-   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
-   </PIN>
-   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
-   </PIN>
-   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
-   </PIN>
-   <PIN pinname="View" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1">
-   </PIN>
-   <PIN pinname="Show Cursor" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="57" srcpinname="Layer Out" dstnodeid="59" dstpinname="Layers">
-   </LINK>
    <NODE systemname="MouseState (System Split Legacy)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseState (System Split)" componentmode="Hidden" id="60">
    <BOUNDS type="Node" left="1635" top="8475" width="100" height="100">
    </BOUNDS>
@@ -557,13 +531,11 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
-   <PIN pinname="Y Input Value">
+   <PIN pinname="Y Input Value" slicecount="2" values="609,582">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Actual BackBuffer SizeXY|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Actual BackBuffer SizeXY" dstnodeid="61" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="60" srcpinname="X" dstnodeid="1" dstpinname="X">
    </LINK>
    <LINK srcnodeid="60" srcpinname="Y" dstnodeid="1" dstpinname="Y">
@@ -584,23 +556,15 @@
    </LINK>
    <LINK srcnodeid="62" srcpinname="Y" dstnodeid="4" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="View" dstnodeid="59" dstpinname="View">
-   </LINK>
    <NODE systemname="FrameDelay (Animation Legacy)" nodename="FrameDelay (Animation)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="3000" top="8175" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="2" values="609,582">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="59" srcpinname="Actual BackBuffer SizeXY" dstnodeid="63" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="63" srcpinname="Output 1" dstnodeid="62" dstpinname="XY">
-   </LINK>
-   <LINK srcnodeid="41" srcpinname="Transform Out" dstnodeid="59" dstpinname="Projection">
-   </LINK>
-   <LINK srcnodeid="59" srcpinname="Mouse State" dstnodeid="60" dstpinname="Mouse">
    </LINK>
    <LINK srcnodeid="58" srcpinname="Output Node" dstnodeid="57" dstpinname="Layer 2">
    </LINK>
@@ -727,5 +691,43 @@
    <LINK srcnodeid="77" srcpinname="Output" dstnodeid="64" dstpinname="String">
    </LINK>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="77" dstpinname="Input 2">
+   </LINK>
+   <PACK Name="vvvv.packs_" Version="0.2.0">
+   </PACK>
+   <NODE id="59" componentmode="InAWindow" systemname="Renderer (DX11)" filename="%VVVV%\directx11\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
+   <BOUNDS type="Window" left="-255" top="900" width="12990" height="9315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="7815" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1650" top="7815" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Mouse State" visible="1">
+   </PIN>
+   <PIN pinname="Depth Buffer Mode" slicecount="1" values="Standard">
+   </PIN>
+   <PIN pinname="Depth Buffer Format" slicecount="1" values="D32_Float">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Show Cursor" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Mouse State" dstnodeid="60" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="41" srcpinname="Transform Out" dstnodeid="59" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Actual BackBuffer SizeXY" dstnodeid="63" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="View" dstnodeid="59" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Actual BackBuffer SizeXY" dstnodeid="61" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Layer Out" dstnodeid="59" dstpinname="Layers">
    </LINK>
    </PATCH>
