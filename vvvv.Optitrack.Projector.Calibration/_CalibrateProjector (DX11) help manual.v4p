@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" filename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" locked="0" systemname="_CalibrateProjector (DX11) help manual" scrollx="0" scrolly="12255">
+   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" filename="C:\inria\vvvv\projects\vvvv.Optitrack.Projector.Calibration\_CalibrateProjector (DX11) help manual.v4p" locked="0" systemname="_CalibrateProjector (DX11) help manual" scrollx="0" scrolly="8280">
    <BOUNDS height="14445" left="375" top="450" type="Window" width="19605">
    </BOUNDS>
    <LINK dstnodeid="34" dstpinname="Y Input Value" srcnodeid="22" srcpinname="Mouse XYZ">
@@ -182,7 +182,7 @@
    <PIN pinname="Input String" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" filename="Subpatches\Renderer.Projection.v4p" id="51" nodename="Subpatches\Renderer.Projection.v4p" systemname="Renderer.Projection">
+   <NODE componentmode="InAWindow" filename="Subpatches\Renderer.Projection.v4p" id="51" nodename="Subpatches\Renderer.Projection.v4p" systemname="Renderer.Projection">
    <BOUNDS height="270" left="480" top="22110" type="Node" width="7500">
    </BOUNDS>
    <BOUNDS height="7692" left="10536" top="2676" type="Window" width="11136">
@@ -1245,7 +1245,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="13365" top="18510" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1259,7 +1259,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Test saved file|">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Y Output Value" dstnodeid="171" dstpinname="Input" linkstyle="VHV">
@@ -1564,14 +1564,14 @@
    </NODE>
    <LINK srcnodeid="195" srcpinname="Y Output Value" dstnodeid="51" dstpinname="Fullscreen">
    </LINK>
-   <NODE systemname="KinectPreview (Directx11)" filename="..\SimpleKinect\modules\KinectPreview (Directx11).v4p" nodename="KinectPreview (Directx11)" componentmode="Hidden" id="198">
+   <NODE systemname="KinectPreview (Directx11)" filename="..\SimpleKinect\modules\KinectPreview (Directx11).v4p" nodename="KinectPreview (Directx11)" componentmode="InAWindow" id="198">
    <BOUNDS type="Node" left="12810" top="16380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Kinect transform" visible="1">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="11130" top="825" width="18195" height="12360">
+   <BOUNDS type="Window" left="7260" top="2310" width="18195" height="12360">
    </BOUNDS>
    <PIN pinname="meters / cm" slicecount="1" values="1">
    </PIN>
@@ -1608,6 +1608,8 @@
    <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="198" srcpinname="Layer Out" dstnodeid="223" dstpinname="Layer 1">
@@ -1931,5 +1933,27 @@
    <LINK srcnodeid="281" srcpinname="Output Node" dstnodeid="168" dstpinname="Transform 2">
    </LINK>
    <LINK srcnodeid="281" srcpinname="Output Node" dstnodeid="228" dstpinname="Transform In 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="282" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14295" top="16725" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14295" top="16725" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="282" srcpinname="Y Output Value" dstnodeid="223" dstpinname="Enabled">
    </LINK>
    </PATCH>

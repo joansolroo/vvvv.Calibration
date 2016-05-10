@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\SimpleKinect\_root.v4p" systemname="_root" filename="C:\vvvv\projects\KinectStream\_root.v4p" scrollx="495" scrolly="6645">
-   <BOUNDS type="Window" left="5790" top="6930" width="25230" height="11160">
+   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\SimpleKinect\_root.v4p" systemname="_root" filename="C:\vvvv\projects\KinectStream\_root.v4p" scrollx="495" scrolly="5565">
+   <BOUNDS type="Window" left="4425" top="6240" width="25230" height="11160">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
    </PACK>

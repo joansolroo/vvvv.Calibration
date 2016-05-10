@@ -695,7 +695,7 @@
    <PACK Name="vvvv.packs_" Version="0.2.0">
    </PACK>
    <NODE id="59" componentmode="InAWindow" systemname="Renderer (DX11)" filename="%VVVV%\directx11\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)">
-   <BOUNDS type="Window" left="16350" top="315" width="12990" height="9315">
+   <BOUNDS type="Window" left="10980" top="1080" width="12990" height="9315">
    </BOUNDS>
    <BOUNDS type="Node" left="1650" top="7815" width="100" height="100">
    </BOUNDS>
