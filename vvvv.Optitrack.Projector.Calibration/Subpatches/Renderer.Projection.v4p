@@ -155,7 +155,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="1320" top="2025" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="4200" left="31305" top="3525" type="Window" width="6060">
+   <BOUNDS height="4200" left="27660" top="4824" type="Window" width="6072">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>

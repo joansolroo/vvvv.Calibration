@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
-   <PATCH nodename="C:\vvvv\projects\vvvv.Calibration\SimpleKinect\PickPointsInTexture.v4p" scrollx="0" scrolly="720" systemname="PickPointsInTexture" filename="C:\vvvv\projects\KinectStream\PickPointsInTexture.v4p">
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\SimpleKinect\PickPointsInTexture.v4p" scrollx="0" scrolly="720" systemname="PickPointsInTexture" filename="C:\vvvv\projects\KinectStream\PickPointsInTexture.v4p">
    <BOUNDS type="Window" left="3744" top="3516" width="12072" height="10236">
    </BOUNDS>
    <PACK Name="addonpack" Version="33.7.0">
@@ -500,6 +500,4 @@
    </NODE>
    <LINK srcnodeid="35" srcpinname="Y Output Value" dstnodeid="34" dstpinname="Input 1">
    </LINK>
-   <PACK Name="vvvv.packs_" Version="0.2.0">
-   </PACK>
    </PATCH>

@@ -1,0 +1,127 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\UpdateViewWithPosition.v4p" systemname="UpdateViewWithPosition" filename="C:\inria\vvvv\projects\Calibration\CalibrationTools\Modules\UpdateViewWithPosition.v4p">
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="0" systemname="IOBox (Node)" hiddenwhenlocked="0">
+   <BOUNDS type="Box" left="3360" top="612" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3360" top="612" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Projector transform|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (Transform)" nodename="S+H (Transform)" componentmode="Hidden" id="1" filename="%VVVV%\lib\nodes\modules\Transform\S+H (Transform).v4p" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2520" top="1776" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Inverse (Transform)" nodename="Inverse (Transform)" componentmode="Hidden" id="2" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2628" top="2292" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Source" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Transform)" filename="" nodename="Multiply (Transform)" componentmode="Hidden" id="3" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2100" top="2904" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform In Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Transform In 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Transform In 2" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="4" systemname="IOBox (Node)" hiddenwhenlocked="0">
+   <BOUNDS type="Box" left="2100" top="3384" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2100" top="3384" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|View out|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="5" systemname="IOBox (Node)" hiddenwhenlocked="0">
+   <BOUNDS type="Box" left="1728" top="624" width="816" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1728" top="624" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Calibrated view Transform|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0">
+   <BOUNDS type="Box" left="336" top="756" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="336" top="756" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Calibrating">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="3" dstpinname="Transform In 1" linkstyle="Bezier">
+   <LINKPOINT x="2652" y="2854">
+   </LINKPOINT>
+   <LINKPOINT x="2112" y="2618">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="3" dstpinname="Transform In 2" linkstyle="Bezier">
+   <LINKPOINT x="2556" y="2596">
+   </LINKPOINT>
+   <LINKPOINT x="2304" y="2360">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Node" dstnodeid="3" dstpinname="Transform In 3" linkstyle="Bezier">
+   <LINKPOINT x="1652" y="1864">
+   </LINKPOINT>
+   <LINKPOINT x="2620" y="1892">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="4" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="1" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="3372" y="1374">
+   </LINKPOINT>
+   <LINKPOINT x="2544" y="1254">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Set" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="1044" y="1648">
+   </LINKPOINT>
+   <LINKPOINT x="2436" y="1352">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="2" dstpinname="Source" linkstyle="VHV">
+   <LINKPOINT x="3372" y="1572">
+   </LINKPOINT>
+   <LINKPOINT x="3240" y="1572">
+   </LINKPOINT>
+   </LINK>
+   <BOUNDS type="Window" left="8364" top="3348" width="5352" height="4776">
+   </BOUNDS>
+   <PACK Name="image" Version="0.2.0">
+   </PACK>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   </PATCH>
